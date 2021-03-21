@@ -1,0 +1,23 @@
+
+/* Mise en place des règles de style générales + taille police */
+html{
+  margin: 0;
+  padding: 0;
+  font-size: 67,5%;
+}
+
+/* Style du logo + texte association */
+header{
+  background: no-repeat url(./images/sunny-defocused-green-nature-background-abstract-bokeh-effect-es-element-your-design.jpg);
+}
+
+.logo>img{
+  height: 1.5rem;
+  ;
+}
+.logo-text{
+  font-size: 1rem;
+  line-height: 2rem;
+  color: blue;
+}
+
