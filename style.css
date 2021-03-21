@@ -9,6 +9,8 @@ html{
 /* Style du logo + texte association */
 header{
   background: no-repeat url(./images/sunny-defocused-green-nature-background-abstract-bokeh-effect-es-element-your-design.jpg);
+  background-size: cover;
+  height: 3.5rem;
 }
 
 .logo>img{
@@ -18,6 +20,12 @@ header{
 .logo-text{
   font-size: 1rem;
   line-height: 2rem;
-  color: blue;
+  margin: 0;
+  color: green;
+}
+
+/* style de la navbar */
+nav{
+  font-size: 0.80rem;
 }
 
