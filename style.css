@@ -83,3 +83,18 @@ aside>h2{
   text-align: justify;
   margin-top: 2px;
 }
+
+/* style du footer */
+
+footer{
+  /* background-color: ; */
+  height: 70px;
+}
+
+.copy{
+  font-size: 0.65rem;
+}
+
+.lgfacebook{
+  font-size: 1.5rem;
+}
