@@ -1,38 +1,40 @@
-
 /* Mise en place des règles de style générales + taille police */
-html{
+html {
   margin: 0;
   padding: 0;
-  font-size: 67,5%;
+  font-size: 85%;
 }
 
 /* style des tailles (polices, logos) regroupées */
-.contact,.copy{
+.contact,
+.copy {
   font-size: 0.65rem;
 }
 
-nav, .presentation-text{
+nav,
+.presentation-text {
   font-size: 0.8rem;
 }
 
-.logo-text,.presentation-title, .presentation-text::first-letter, aside>h2{
+.logo-text,
+.presentation-title,
+.presentation-text::first-letter,
+aside > h2 {
   font-size: 1rem;
 }
 
-
-
 /* Style du logo + texte association */
-header{
-  background: no-repeat url(./images/sunny-defocused-green-nature-background-abstract-bokeh-effect-es-element-your-design.jpg);
+header {
+  background: no-repeat
+    url(./images/sunny-defocused-green-nature-background-abstract-bokeh-effect-es-element-your-design.jpg);
   background-size: cover;
   height: 3.5rem;
 }
 
-.logo>img{
+.logo > img {
   height: 1.5rem;
-  ;
 }
-.logo-text{
+.logo-text {
   line-height: 2rem;
   margin: 0;
   color: green;
@@ -40,19 +42,19 @@ header{
 
 /* style de la section :presentation de l'association */
 
-.presentation-title-image{
+.presentation-title-image {
   height: 1rem;
 }
 
-.etang-photo{
-  max-width:350px;
+.etang-photo {
+  max-width: 325px;
 }
 
-.presentation-text{
+.presentation-text {
   text-align: justify;
 }
 
-.presentation-text::first-letter{
+.presentation-text::first-letter {
   color: green;
   font-weight: 500;
   font-family: cursive;
@@ -60,28 +62,86 @@ header{
 
 /* style de l'espace "partenaires" */
 
-aside{
-  height: 135px;
+aside {
+  height: 8rem;
   background-color: rgb(193, 241, 193);
 }
 
-.logo-partenaires>figure>img{
-  max-width: 100px;
-  height: 40px;
+.logo-partenaires > figure > img {
+  height: 2.5rem;
 }
 
-.logo-partenaires>figure>figcaption{
-  font-size: 0.5rem;
-  text-align: justify;
+.logo-partenaires > figure > figcaption {
+  font-size: 0.50rem;
   margin-top: 2px;
+  font-weight: 500;
 }
 
 /* style du footer */
 
-footer{
-  height: 70px;
+footer {
+  height:3.5rem;
 }
 
-.lgfacebook{
+.lgfacebook {
   font-size: 1.5rem;
+}
+
+/* passage de l'écran en taille moyenne changement taille polices et logos */
+
+@media screen and (min-width: 450px) {
+  html {
+    font-size: 130%;
+  }
+
+}
+
+
+/* passage de l'écran en taille large passage de la balise aside sur le côté et changement taille polices et logos */
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 150%;
+  }
+
+  aside {
+    height: 100%;
+    border-left: 1px SOLID green;
+  }
+
+  .logo-partenaires {
+    height: 65%;
+  }
+
+  .logo-partenaires > figure > img {
+    height: 3.5rem;
+  }
+
+  .logo-partenaires > figure > figcaption {
+    font-size: 0.8rem;
+  }
+
+  .responsive-1 {
+    flex: 5.5;
+  }
+
+  .responsive-2 {
+    flex: 1.4;
+  }
+}
+
+/* passage de l'écran en taille extra-large écartement des liens de la navbar, la police augmente et la balise aside se reproportionne */
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 190%;
+  }
+
+  .responsive-1 {
+    flex: 6;
+  }
+
+  .responsive-2 {
+    flex: 1.4;
+  }
 }
