@@ -6,6 +6,21 @@ html{
   font-size: 67,5%;
 }
 
+/* style des tailles (polices, logos) regroupées */
+.contact,.copy{
+  font-size: 0.65rem;
+}
+
+nav, .presentation-text{
+  font-size: 0.8rem;
+}
+
+.logo-text,.presentation-title, .presentation-text::first-letter, aside>h2{
+  font-size: 1rem;
+}
+
+
+
 /* Style du logo + texte association */
 header{
   background: no-repeat url(./images/sunny-defocused-green-nature-background-abstract-bokeh-effect-es-element-your-design.jpg);
@@ -18,47 +33,29 @@ header{
   ;
 }
 .logo-text{
-  font-size: 1rem;
   line-height: 2rem;
   margin: 0;
   color: green;
 }
 
-/* style de la navbar */
-nav{
-  font-size: 0.80rem;
-}
-
 /* style de la section :presentation de l'association */
-
-.presentation-title{
-  font-size: 1rem;
-}
 
 .presentation-title-image{
   height: 1rem;
 }
 
 .etang-photo{
-  max-width:400px;
+  max-width:350px;
 }
 
 .presentation-text{
-  font-size: 0.75rem;
   text-align: justify;
 }
 
 .presentation-text::first-letter{
   color: green;
   font-weight: 500;
-  font-size: 1.1rem;
   font-family: cursive;
-}
-
-/* style de la section contact */
-
-.contact{
-  font-size: 0.65rem;
 }
 
 /* style de l'espace "partenaires" */
@@ -66,11 +63,6 @@ nav{
 aside{
   height: 135px;
   background-color: rgb(193, 241, 193);
-  /* border: 1px solid green; */
-}
-
-aside>h2{
-  font-size: 1rem;
 }
 
 .logo-partenaires>figure>img{
@@ -87,12 +79,7 @@ aside>h2{
 /* style du footer */
 
 footer{
-  /* background-color: ; */
   height: 70px;
-}
-
-.copy{
-  font-size: 0.65rem;
 }
 
 .lgfacebook{
