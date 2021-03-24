@@ -5,7 +5,7 @@ html {
   font-size: 85%;
 }
 
-/* style des tailles (polices, logos) regroupées */
+/* style des tailles (polices, logos) regroupés */
 .contact,
 .copy {
   font-size: 0.65rem;
@@ -22,8 +22,8 @@ nav,
 aside > h2 {
   font-size: 1rem;
 }
-
-/* Style du logo + texte association */
+/* MOBILE FIRST */
+/* Style du logo + texte association dans header */
 header {
   background: no-repeat
     url(./images/sunny-defocused-green-nature-background-abstract-bokeh-effect-es-element-your-design.jpg);
@@ -40,14 +40,13 @@ header {
   color: green;
 }
 
-/* style de la section :presentation de l'association */
-
+/* style de la section :présentation de l'association */
 .presentation-title-image {
   height: 1rem;
 }
 
 .etang-photo {
-  max-width: 325px;
+  max-width: 350px;
 }
 
 .presentation-text {
@@ -61,49 +60,44 @@ header {
 }
 
 /* style de l'espace "partenaires" */
-
 aside {
   height: 8rem;
   background-color: rgb(193, 241, 193);
 }
 
-.logo-partenaires > figure > img {
+.logo-picture {
   height: 2.5rem;
 }
 
 .logo-partenaires > figure > figcaption {
-  font-size: 0.50rem;
+  font-size: 0.7rem;
   margin-top: 2px;
   font-weight: 500;
 }
 
 /* style du footer */
-
 footer {
-  height:3.5rem;
+  height: 3.5rem;
 }
 
 .lgfacebook {
   font-size: 1.5rem;
 }
 
-/* passage de l'écran en taille moyenne changement taille polices et logos */
-
+/* passage de l'écran en taille intermédiaire changement taille polices et logos */
 @media screen and (min-width: 450px) {
   html {
     font-size: 130%;
   }
-
 }
 
-
 /* passage de l'écran en taille large passage de la balise aside sur le côté et changement taille polices et logos */
-
 @media screen and (min-width: 992px) {
   html {
     font-size: 150%;
   }
 
+  /* la taille des logos, leur emplacement ainsi que la proportion de la zone aside est retravaillée  */
   aside {
     height: 100%;
     border-left: 1px SOLID green;
@@ -113,7 +107,7 @@ footer {
     height: 65%;
   }
 
-  .logo-partenaires > figure > img {
+  .logo-picture {
     height: 3.5rem;
   }
 
