@@ -1,3 +1,5 @@
+/* style commun au fichier index.html et event.html */
+
 /* Mise en place des règles de style générales + taille police */
 html {
   margin: 0;
@@ -6,19 +8,27 @@ html {
 }
 
 /* style des tailles (polices, logos) regroupés */
+
+h1,h2{
+  font-family: 'Architects Daughter', cursive;
+}
+
 .contact,
 .copy {
   font-size: 0.65rem;
 }
 
 nav,
-.presentation-text {
-  font-size: 0.8rem;
+.presentation-text,
+.card-text,
+.card-btn {
+  font-size: 0.79rem;
 }
 
 .logo-text,
 .presentation-title,
 .presentation-text::first-letter,
+.card-title,
 aside > h2 {
   font-size: 1rem;
 }
@@ -138,4 +148,11 @@ footer {
   .responsive-2 {
     flex: 1.4;
   }
+}
+
+
+/* style du fichier event.html */
+
+.card-body{
+  text-align: justify;
 }

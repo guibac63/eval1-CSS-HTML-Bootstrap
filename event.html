@@ -21,6 +21,11 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Association de pêche de la Comté</title>
   </head>
@@ -76,10 +81,52 @@
 
     <!-- création d'une div qui englobe les 3 sections evenements, contacts et partenaires pour responsive ecran large -->
     <div class="d-lg-flex align-items-lg-stretch">
-      <!-- bloc principal responsive 1 : présentation + contacts -->
-      <div class="responsive-1">
-        
-      </div>
+      <!-- bloc principal responsive 1 : evénements + contacts -->
+      <section
+        class="responsive-1 d-flex flex-column align-items-center justify-content-center my-3"
+      >
+        <h2 class="presentation-title mb-0">Evenements</h2>
+        <img
+          class="presentation-title-image mb-3"
+          src="./images/sepgpaysage.png"
+          alt="surlignage nature"
+        />
+        <!-- EVENEMENT 1 -->
+        <div class="card my-3 shadow-sm" style="width: 65%">
+          <img
+            src="./images/pexels-lumn-190294.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Concours de pêche</h5>
+            <p class="card-text">
+              L'association organise un concours de pêche le Samedi 10 Juin
+              2021. La compétion se déroulera à l'américaine (par équipes de 2)
+              en 2 phases de 2h chacunes. Les techniques de pêche autorisées...
+            </p>
+            <a href="#" class="btn btn-success card-btn">En savoir plus</a>
+          </div>
+        </div>
+        <!-- EVENEMENT 2 -->
+        <div class="card my-3 shadow sm" style="width: 65%">
+          <img
+            src="./images/pexels-nataly-grb-5571605.jpg"
+            class="card-img-top"
+            alt="truite sur un lit d'herbe"
+          />
+          <div class="card-body">
+            <h5 class="card-title">C'est l'ouverture !</h5>
+            <p class="card-text">
+              L'hiver fut long et rigoureux mais votre patience va être
+              récompensée! l'ouverture des ruisseaux et rivières de 2nde catégorie aura lieu
+              le Samedi 11 Mars 2020. Pour l'évenement, un lâcher de truites a
+              été effectué...
+            </p>
+            <a href="#" class="btn btn-success card-btn">En savoir plus</a>
+          </div>
+        </div>
+      </section>
       <!-- bloc responsive principal 2 : "nos partenaires qui passe à drite en vertical" -->
       <div class="responsive-2">
         <aside class="shadow-lg">
@@ -95,7 +142,9 @@
                   alt="logo magasin de pêche MOULIN"
                 />
               </a>
-              <figcaption class="text-lg-center  text-success">Magasin MOULIN</figcaption>
+              <figcaption class="text-lg-center text-success">
+                Magasin MOULIN
+              </figcaption>
             </figure>
             <figure class="mb-0">
               <a href="#">
@@ -105,7 +154,9 @@
                   alt="logo Magasin de pêche DUVERT"
                 />
               </a>
-              <figcaption class="text-lg-center  text-success">Magasin DUVERT</figcaption>
+              <figcaption class="text-lg-center text-success">
+                Magasin DUVERT
+              </figcaption>
             </figure>
             <figure>
               <a href="#">
@@ -115,7 +166,9 @@
                   alt="logo Conseil général de la Comté"
                 />
               </a>
-              <figcaption class="text-lg-center  text-success">CG de la Comté</figcaption>
+              <figcaption class="text-lg-center text-success">
+                CG de la Comté
+              </figcaption>
             </figure>
           </div>
         </aside>
