@@ -33,7 +33,7 @@
     <header class="d-flex justify-content-center">
       <div class="d-flex justify-content-center align-items-center p-1">
         <div
-          class="logo mx-1 border border-1 border-dark rounded-circle p-1 bg-light"
+          class="logo mx-1 border border-1 border-dark rounded-circle p-1 bg-light d-none d-md-block"
         >
           <img
             class="align-baseline"
@@ -41,27 +41,39 @@
             alt="logo de l'association de pêche de la Comté"
           />
         </div>
-        <h1 class="logo-text">Association de pêche de la Comté</h1>
+        <h1 class="logo-text m-0">Association de pêche de la Comté</h1>
       </div>
     </header>
     <nav class="navbar navbar-expand-md navbar-dark bg-success">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#"
+          ><div
+            class="logo mx-1 border border-1 border-dark rounded-circle p-1 bg-light d-md-none"
+          >
+            <img
+              class="align-baseline"
+              src="./images/2026318.svg"
+              alt="logo de l'association de pêche de la Comté"
+            /></div
+        ></a>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
-            <li class="nav-item">
-              <a class="nav-link mx-xl-3" aria-current="page" href="#assoc"
+           <li class="nav-item">
+              <a
+                class="nav-link mx-xl-3"
+                aria-current="page"
+                href="./index.html"
                 >L'association</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-xl-3" href="#">Evenements</a>
+              <a class="nav-link mx-xl-3" href="#contact">Nous contacter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-xl-3" href="./event.html">Evenements</a>
             </li>
             <li class="nav-item">
               <a class="nav-link mx-xl-3" href="#">Règlement pêche</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-xl-3" href="#contact">Nous contacter</a>
             </li>
           </ul>
         </div>
@@ -163,7 +175,7 @@
           </article>
         </div>
       </div>
-      <!-- bloc responsive principal 2 : "nos partenaires qui passe à drite en vertical" -->
+      <!-- bloc responsive principal 2 : "nos partenaires qui passe à droite en vertical" -->
       <div class="responsive-2">
         <aside class="shadow-lg">
           <h2 class="text-success text-center py-3">Nos partenaires</h2>

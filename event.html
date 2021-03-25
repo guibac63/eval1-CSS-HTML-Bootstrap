@@ -33,7 +33,7 @@
     <header class="d-flex justify-content-center">
       <div class="d-flex justify-content-center align-items-center p-1">
         <div
-          class="logo mx-1 border border-1 border-dark rounded-circle p-1 bg-light"
+          class="logo mx-1 border border-1 border-dark rounded-circle p-1 bg-light d-none d-md-block"
         >
           <img
             class="align-baseline"
@@ -46,25 +46,16 @@
     </header>
     <nav class="navbar navbar-expand-md navbar-dark bg-success">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"></a>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
-            <li class="nav-item">
-              <a class="nav-link mx-xl-3" aria-current="page" href="#assoc"
-                >L'association</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-xl-3" href="#">Evenements</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-xl-3" href="#">Règlement pêche</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-xl-3" href="#contact">Nous contacter</a>
-            </li>
-          </ul>
-        </div>
+        <a class="navbar-brand" href="#"
+          ><div
+            class="logo mx-1 border border-1 border-dark rounded-circle p-1 bg-light d-md-none"
+          >
+            <img
+              class="align-baseline"
+              src="./images/2026318.svg"
+              alt="logo de l'association de pêche de la Comté"
+            /></div
+        ></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -76,6 +67,27 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link mx-xl-3"
+                aria-current="page"
+                href="./index.html"
+                >L'association</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-xl-3" href="./index.html#contact">Nous contacter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-xl-3" href="#event">Evenements </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-xl-3" href="#">Règlement pêche</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -83,6 +95,7 @@
     <div class="d-lg-flex align-items-lg-stretch">
       <!-- bloc principal responsive 1 : evénements + contacts -->
       <section
+        id="event"
         class="responsive-1 d-flex flex-column align-items-center justify-content-center my-3"
       >
         <h2 class="presentation-title mb-0">Evenements</h2>
@@ -119,15 +132,15 @@
             <h5 class="card-title">C'est l'ouverture !</h5>
             <p class="card-text">
               L'hiver fut long et rigoureux mais votre patience va être
-              récompensée! l'ouverture des ruisseaux et rivières de 2nde catégorie aura lieu
-              le Samedi 11 Mars 2020. Pour l'évenement, un lâcher de truites a
-              été effectué...
+              récompensée! l'ouverture des ruisseaux et rivières de 2nde
+              catégorie aura lieu le Samedi 11 Mars 2020. Pour l'évenement, un
+              lâcher de truites a été effectué...
             </p>
             <a href="#" class="btn btn-success card-btn">En savoir plus</a>
           </div>
         </div>
       </section>
-      <!-- bloc responsive principal 2 : "nos partenaires qui passe à drite en vertical" -->
+      <!-- bloc responsive principal 2 : "nos partenaires qui passe à droite en vertical" -->
       <div class="responsive-2">
         <aside class="shadow-lg">
           <h2 class="text-success text-center py-3">Nos partenaires</h2>

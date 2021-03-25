@@ -1,5 +1,4 @@
 /* style commun au fichier index.html et event.html */
-
 /* Mise en place des règles de style générales + taille police */
 html {
   margin: 0;
@@ -7,21 +6,27 @@ html {
   font-size: 85%;
 }
 
-/* style des tailles (polices, logos) regroupés */
-
+/* style des tailles (polices, logos,family) regroupés */
 h1,h2{
   font-family: 'Architects Daughter', cursive;
 }
 
 .contact,
-.copy {
+.copy
+ {
   font-size: 0.65rem;
 }
 
-nav,
-.presentation-text,
 .card-text,
 .card-btn {
+  font-size: 0.70rem;
+}
+
+
+
+nav,
+.presentation-text
+{
   font-size: 0.79rem;
 }
 
@@ -32,8 +37,9 @@ nav,
 aside > h2 {
   font-size: 1rem;
 }
+
 /* MOBILE FIRST */
-/* Style du logo + texte association dans header */
+/* Style nom association dans header */
 header {
   background: no-repeat
     url(./images/sunny-defocused-green-nature-background-abstract-bokeh-effect-es-element-your-design.jpg);
@@ -41,13 +47,15 @@ header {
   height: 3.5rem;
 }
 
-.logo > img {
-  height: 1.5rem;
-}
 .logo-text {
   line-height: 2rem;
-  margin: 0;
   color: green;
+}
+
+/* style du logo dans navbar */
+
+.logo > img {
+  height: 1.8rem;
 }
 
 /* style de la section :présentation de l'association */
@@ -56,7 +64,7 @@ header {
 }
 
 .etang-photo {
-  max-width: 350px;
+  max-width: 300px;
 }
 
 .presentation-text {
@@ -80,7 +88,7 @@ aside {
 }
 
 .logo-partenaires > figure > figcaption {
-  font-size: 0.7rem;
+  font-size: 0.60rem;
   margin-top: 2px;
   font-weight: 500;
 }
@@ -101,7 +109,7 @@ footer {
   }
 }
 
-/* passage de l'écran en taille large passage de la balise aside sur le côté et changement taille polices et logos */
+/* passage de l'écran en taille large passage de la balise aside sur le côté droit et changement taille polices et logos */
 @media screen and (min-width: 992px) {
   html {
     font-size: 150%;
@@ -134,11 +142,10 @@ footer {
   }
 }
 
-/* passage de l'écran en taille extra-large écartement des liens de la navbar, la police augmente et la balise aside se reproportionne */
-
+/* passage de l'écran en taille extra-large écartement des liens de la navbar, la taille police augmente et la balise aside se reproportionne */
 @media screen and (min-width: 1200px) {
   html {
-    font-size: 185%;
+    font-size: 180%;
   }
 
   .responsive-1 {
@@ -150,9 +157,7 @@ footer {
   }
 }
 
-
-/* style du fichier event.html */
-
+/* style propre au fichier event.html seulement */
 .card-body{
   text-align: justify;
 }
